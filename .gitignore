@@ -1,0 +1,20 @@
+# Kernel build artifacts
+*.o
+*.ko
+*.mod.*
+*.symvers
+*.order
+
+# Temporary and backup files
+*.swp
+*.bak
+*.tmp
+*.out
+
+# Text and log files
+*.txt
+*.log
+
+# Ignore all dotfiles and dotfolders except .gitignore
+.*
+!.gitignore
