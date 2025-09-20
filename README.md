@@ -10,7 +10,7 @@ A personal exploration into Linux kernel module development using C/C++. This re
 - Build a simple character device driver
 - Log kernel messages using `printk`
 - Compile modules with a reproducible `Makefile`
-- Test modules in a minimal VM or WSL environment
+- Test modules in a minimal WSL environment
 
 ---
 
@@ -18,14 +18,14 @@ A personal exploration into Linux kernel module development using C/C++. This re
 
 ### Prerequisites
 
-- Linux system (Ubuntu, Arch, or WSL2)
+- Linux system (Ubuntu, Arch or WSL2)
 - Kernel headers installed (`linux-headers-$(uname -r)`)
 - Basic C/C++ compiler (`gcc`, `make`)
 
 ### Build & Load
 
 ```bash
-make           # Compile the kernel module
-sudo insmod my_driver.ko   # Insert module
-dmesg | tail   # Check kernel logs
-sudo rmmod my_driver       # Remove module
+make           				# Compile the kernel module
+sudo insmod my_driver.ko   	# Insert module
+dmesg | tail   				# Check kernel logs
+sudo rmmod my_driver       	# Remove module
